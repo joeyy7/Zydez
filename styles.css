@@ -1,0 +1,479 @@
+*{
+	box-sizing: border-box;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  }
+.login_body{
+    background-image: linear-gradient(to bottom right, #5D69BE, #C89FEB);
+}
+.index_body{
+    background-image: linear-gradient(to bottom right, #C6D0D6, #E2EBF0);
+}
+
+/*-----------------------------------------------------Registration Page --------------------------------------------------------*/
+.container_RegForm hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+.container_RegForm {
+    margin: 15px 200px;
+    padding: 5px 16px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container_input{
+    margin: 20px 0 0 230px  ;
+    padding-left: 5%;
+    
+}
+.nametag{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+.nametag input[type=text] {
+    width: 30%;
+    padding: 15px 13px;
+    margin: 5px 0 20px 10px;
+    display: inline-block;
+    border: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    background: #cac9c9;
+    border-radius: 5px;
+}
+  
+.nametag input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.emailtag{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+.emailtag input[type=text] {
+    width: 62%;
+    padding: 15px;
+    margin: 0px 0 5px 10px;
+    display: inline-block;
+    border: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+    background: #cac9c9;
+    border-radius: 5px;
+}
+  
+.emailtag input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.usernametag{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+.usernametag input[type=text] {
+    width: 62%;
+    padding: 15px;
+    margin: 0px 0 20px 10px;
+    display: inline-block;
+    border: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    background: #cac9c9;
+    border-radius: 5px;
+}
+  
+.usernametag input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.passtag{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+.passtag input[type=password] {
+    width: 62%;
+    padding: 15px;
+    margin: 0px 0 10px 10px;
+    display: inline-block;
+    border: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+    background: #cac9c9;
+    border-radius: 5px;
+}
+  
+.passtag input[type=password]:focus {
+    background-color: rgb(222, 215, 251);
+    outline: none;
+}
+.datetag{
+    width: 100%;
+    height: auto;
+    padding: 5px 20px;
+}
+.datetag [type="date"] {
+    background:rgb(208, 208, 208) url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+  }
+.datetag   [type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+.datetag   [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+
+.registerbtn {
+    background-color: #1e0258;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 320px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40%;
+    opacity: 0.9;
+  }
+  
+.registerbtn:hover {
+    opacity: 1;
+  }
+  
+.container_RegForm a {
+    color: dodgerblue;
+  }
+  
+.signin {
+    text-align: center;
+  }
+
+  .header{
+    height: 75px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 #f0f1f1, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+}
+.topBarLeft{
+    padding: 0.5%;
+    float: left;
+}
+.logoImg{
+    width: 100%;
+    height: 60px;
+}
+
+/*-----------------------------------------Index Page ----Nav Bar------------------------------------------------------------------------------*/
+
+
+
+.header_NavBar{
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    top: 0%;
+    height: 75px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 #f0f1f1, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 2;
+}
+.topBarLeft{
+    padding: 0.5%;
+    float: left;
+}
+.logoImg{
+    width: 100%;
+    height: 60px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+:root {
+    --font-style: 'Nunito Sans', sans-serif;
+}
+.NavBar{
+    font-family: var(--font-style);
+    padding: 0.5%;
+    float: left;
+    margin-left: 5%;
+}
+.NavBar ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  .NavBar  li {
+    float: left;
+  }
+  
+  .NavBar li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  
+  .NavBar li a:hover {
+    display: block;
+    content: '';
+    border-radius: 4px;
+    color: rgb(48, 4, 95);
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 #f0f1f1, 0 2px 4px 0 rgba(5, 2, 47, 0.423);
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(1);
+  }
+  
+  .NavBar li a:active {
+    background-color: #909691;
+    border-radius: 25px;
+  }
+
+/*--------------------------------------- Search Bar ---------------------------------------------------------------------------------------*/
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #040135;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #10613b;
+  }
+  
+  .searchTerm:focus{
+    color: #06353a;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #140125;
+    background: #150349;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 30%;
+    position: absolute;
+    top:50%;
+    left: 60%;
+    right: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+/*--------------------------------------------------------------------------Nav Bar -- DropDown-------------------------------------------------*/
+/* Dropdown Button */
+.dropbtn {
+    background-color: #ffffff;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    top: 25%;
+    left: 45%;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ddd2e6;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(240, 235, 235);}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #ffffff;}
+
+.loginImage{
+    height: 20px;
+    width: 20px;
+}
+
+
+/*----------------------- Home Page -- Section 1 -- Trending ---------------------------------------------------------------------------------*/
+.mainTrending{
+    position: relative;
+    margin-top: 120px;
+    margin-left: 60px;
+    width: 90%;
+    font-weight: bold;
+    font-size: 20px;
+    max-height: auto;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.trendContainer{
+  float: left;
+  width: 33.33%;
+  height: 350px;
+  padding: 20px;
+  margin: 10px 20px;
+  border-radius: 5px;
+}
+.trendCard-container {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+}
+
+.trendCard-container:hover {
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+.cardContainer {
+  padding: 2px 16px;
+}
+.textLink{
+  text-decoration: none;
+  color: black;
+}
+.textLink:hover{
+  text-decoration: none;
+  color: rgb(2, 86, 124);
+}
+
+.trendCard-image{
+  height: 210px;
+  width: 100%;
+}
+
+
+/*------------------------- Home Page --Section 2 ---------------------------------------------------------------------------------------------*/
+.mainPageContent{
+    margin: 80px 150px;
+    padding: 30px;
+    position: relative;
+    height: auto;
+    width: 75%;
+    box-shadow: 0 4px 8px 0 rgba(241, 241, 241, 0.91), 0 8px 20px 0 rgba(41, 40, 40, 0.19);
+}
+/* ----------------------- Home Page --Share your thoughts ------------------------*/
+.thought{
+  width: 100%;
+  height: 100px;
+  padding-left: 35px;
+}
+.thoughtTerm{
+  width: 80%;
+  border: 1px solid #5d605f;
+  padding: 5px 10px;
+  height: 70px;
+  border-radius: 5px;
+  outline: none;
+  color: #02160d;
+}
+.thoughtBtn{
+  width: 150px;
+  height: 50px;
+  border: 1px solid #03354d;
+  background: #152832;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.thoughtBtn:hover{
+  border: 1px solid #03354d;
+  background: #022335;
+  text-align: center;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.fileUpload{
+  margin-left: 10px;
+  padding: 5px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.HRLine{
+  margin: 50px 0;
+}
+
+/*------------------- Home Page - Blog Section ----------------------------------*/
+.postTitle{
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0 0 20px 0;
+  text-align: center;
+}
+.blog-container{
+  margin: 10px 30px 20px 30px;
+  border-radius: 4px;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+  padding: 15px;
+}
+.blog-content-container{
+  padding: 20px;
+  border-color: rgb(221, 185, 185);
+  border-radius: 5px;
+  background-color: rgb(246, 249, 254);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.blog-content-container h2{
+  text-align: center;
+}
+.blog-img{
+  margin-left:15%;
+  border-radius: 5px;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+  padding: 30px 0;
+}
+.blog-container h4{
+  margin-left: 30px;
+}
