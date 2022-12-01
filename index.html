@@ -18,70 +18,119 @@
         <meta name="author" content="Rahil Khan, Naitik Pareek, Joel Varghese">
         <meta name="viewport" content="width=device-width, height=device-height, intial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+        <style>
+            /*Code to change color of active link*/
+            .navbar-nav .active{
+                background-color: rgb(185, 185, 185) !important;
+            }
+           
+        </style>
         
     </head>
     
     <body>
-<!-- Navigation Bar ----------------------------------------------------------------------------->
-        <div class="header_NavBar">
-            <div class="topBarLeft">
-                <img class="logoImg" src="images/book-stall-logo.png">
-            </div>
-            <div class="NavBar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Categories</a></li>
-                    <li><a href="blogs.html">Blogs</a></li>
-                    <li><a href="vlogs.html">Vlogs</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+
+        <nav class=" nav nav-pills navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="javascript:void(0)">Zydex</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mx-xxl-5">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Categories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Vlogs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Contact</a>
+                  </li>
                 </ul>
-            </div>
-    <!-- Search Bar ----------------------------------------------------------------------------->
-            <div class="wrap">
-                <div class="search">
-                   <input type="text" class="searchTerm" placeholder="What are you looking for?">
-                   <button type="submit" class="searchButton">
-                     <i class="fa fa-search"></i>
-                  </button>
-                </div>
-             </div>
-    <!-- Login | Registraion Button ------------------------------------------------------------>
-             <div class="dropdown">
-                <button class="dropbtn">
-                    <img class="loginImage" src="Images/loginBox.png">
-                    Login | Register</button>
-                <div class="dropdown-content">
-                  <a href="login.html">Create an Account</a>
-                  <a href="#">Already registered? Sign In</a>
-                </div>
+                <form class=" d-flex mx-auto me-lg-auto">
+                  <input class="form-control me-2 border-bottom-2 border-dark border-opacity-25" type="text" placeholder="Search">
+                  <button class="btn btn-outline-secondary" type="button">Search</button>
+                </form>
+                <ul class="navbar-nav me-5">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)">Login | Register</a>
+                      </li>  
+                </ul>
               </div>
+            </div>
+          </nav>
+
+        <div class="trendSection">
+            <h1>Trending Topics</h1>
+            <hr>
         </div>
 
-<!-- Trend Section ---------------------------------------------------------------------------->
-    <div class="mainTrending clearfix">
-        <h3>Trending Topics</h3>
-        <div class="trendContainer trendCard-container">
-            <a class="textLink" href="https://metamandrill.com/augmented-reality/" target="_blank"><img class="trendCard-image" src="Images/augmented-reality.jpg" alt="Image of Digital Tree">
-                <div class="cardContainer">
-                    <h4>Augmented Reality; Learn About AR Tech, Use Cases, Devices, and More!</h4>
-                </div></a>
-        </div>
-        <div class="trendContainer trendCard-container">
-            <a class="textLink" href="https://comicbook.com/anime/news/bleach-thousand-year-blood-war-anime-trending/"><img class="trendCard-image" src="Images/bleach.avif" alt="Image of Anime - Bleach">
-                <div class="cardContainer">
-                    <h4>Bleach Tops Global Trends List Following Its Anime Comeback</h4>
-                </div></a>
-        </div>
-        <div class="trendContainer trendCard-container">
-            <a class="textLink" href="https://www.ndtv.com/world-news/fifa-world-cup-a-world-cup-of-political-symbolism-in-silence-3558796"><img class="trendCard-image" src="Images/fifa.webp" alt="Image of Fifa">
-                <div class="cardContainer">
-                    <h4>Silent Messages, Unforgettable Drama At FIFA World Cup</h4>
-                </div></a>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel"> 
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+              <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="hovereffect">
+            <img class="image-responsive"src="Images/augmented-reality.jpg" alt="Los Angeles">
+                <div class="overlay">
+                    <h2 >It is a rose!</p>
+                    <p>It is a tulip!</p>
+                    <p>It is a paragraph!</p>
+                </div>
         </div>
     </div>
+    <div class="carousel-item active">
+        <div class="hovereffect">
+            <img class="image-responsive" src="Images/bleachJPG.jpg" alt="Chicago">
+            <div class="overlay">
+                <p>It is a rose!</p>
+                <p>It is a tulip!</p>
+                <p>It is a paragraph!</p>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item active">
+        <div class="hovereffect">
+            <img class="image-responsive" src="Images/fifa.jpg" alt="New York">
+                <div class="overlay">
+                    <p>It is a rose!</p>
+                    <p>It is a tulip!</p>
+                    <p>It is a paragraph!</p>
+                </div>
+        </div>
+    </div>
+  </div>
+  
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
 
-<!-- Content Section ------------------------------------------------------------------------->
+
         <div class="mainPageContent">
     <!-- Submissions ------------------------------------------------------------------------->      
             <div class="thought">
