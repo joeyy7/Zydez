@@ -18,21 +18,14 @@
         <meta name="author" content="Rahil Khan, Naitik Pareek, Joel Varghese">
         <meta name="viewport" content="width=device-width, height=device-height, intial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
-        <style>
-            /*Code to change color of active link*/
-            .navbar-nav .active{
-                background-color: rgb(185, 185, 185) !important;
-            }
-           
-        </style>
         
     </head>
     
     <body>
 
-        <nav class=" nav nav-pills navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<!-- ------------------NavIgation Bar Section ------------------------------------------------------------------------->
+
+        <nav class=" nav navShadow nav-pills navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="javascript:void(0)">Zydex</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,34 +36,51 @@
                   <li class="nav-item">
                     <a class="nav-link active" href="index.html">Home</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">Categories</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="menu" aria-haspopup="true" aria-expanded="false">Categories</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Lifestyle</a>
+                        <a class="dropdown-item" href="#">Places</a>
+                        <a class="dropdown-item" href="#">Finance</a>
+                        <a class="dropdown-item" href="#">Nature</a>
+                        <a class="dropdown-item" href="#">Technology</a>
+                        <a class="dropdown-item" href="#">Current Affairs</a>
+                        <a class="dropdown-item" href="#">Others</a>
+                      </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">Blogs</a>
+                    <a class="nav-link" href="blogs.html">Blogs</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">Vlogs</a>
+                    <a class="nav-link" href="vlogs.html">Vlogs</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">About us</a>
+                    <a class="nav-link" href="about.html">About us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                   </li>
                 </ul>
                 <form class=" d-flex mx-auto me-lg-auto">
                   <input class="form-control me-2 border-bottom-2 border-dark border-opacity-25" type="text" placeholder="Search">
                   <button class="btn btn-outline-secondary" type="button">Search</button>
                 </form>
-                <ul class="navbar-nav me-5">
+                <ul class="navbar-nav me-4 navbar-right">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)">Login | Register</a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login | Register</a>
+                          <div class="dropdown-menu dropleft bg-">
+                            <a class="dropdown-item" href="login.html">Create an Account</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Already Registered?<br> Login</a>
+                          </div>
                       </li>  
                 </ul>
               </div>
             </div>
           </nav>
+
+
+<!-- ------------------------------- Trend Section After NavBar --------------------------------------------------->
 
         <div class="trendSection">
             <h1>Trending Topics</h1>
@@ -130,7 +140,7 @@
   </button>
 </div>
 
-
+<!-- ------------------- Main Content Page -------------------------------------------------------------------------->
         <div class="mainPageContent">
     <!-- Submissions ------------------------------------------------------------------------->      
             <div class="thought">
@@ -163,7 +173,7 @@
 
                     <h3>Why did Facebook rebrand to Meta?</h3>
                     <p>In October of 2021, Mark Zuckerberg announced that social media titan Facebook would be rebranding to Meta.</p>
-                    <img class="blog-img" src="images/FacebookBlog.png">
+                    
 
                     
                     <p>To be clear, Facebook (the social platform) has remained Facebook. 
