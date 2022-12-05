@@ -54,12 +54,15 @@ body{
 .hovereffect .overlay {
   position: absolute;
   overflow: hidden;
+  
   width: 80%;
-  height: 80%;
+  height: 30%;
   left: 10%;
-  top: 10%;
+  top: 60%;
   border-bottom: 1px solid #FFF;
+  border-radius: 10px;
   border-top: 1px solid #FFF;
+  background-color: linear-gradient(rgba(33, 32, 32, 0.2), rgba(140, 145, 140,0.2));
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: scale(0,1);
@@ -68,7 +71,7 @@ body{
 }
 
 .hovereffect:hover .overlay {
-  opacity: 1;
+  opacity: 2;
   filter: alpha(opacity=100);
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -87,18 +90,18 @@ body{
 .hovereffect:hover img {
   max-height: 580px;
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
-  filter: brightness(0.6);
+  filter: brightness(0.3);
   -webkit-filter: brightness(0.6);
 }
 
 .hovereffect h2 {
-  text-transform: uppercase;
   text-align: center;
   position: relative;
-  font-size: 17px;
   background-color: transparent;
-  color: #FFF;
-  padding: 1em 0;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  padding: 5px 0;
+  font-size: 20px;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -107,9 +110,21 @@ body{
   transform: translate3d(0,-100%,0);
 }
 
-.hovereffect a, .hovereffect p {
-  color: #FFF;
-  padding: 1em 0;
+.hovereffect a {
+  color: rgb(249, 249, 249);
+  padding: 5px 0;
+  text-decoration: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+.hovereffect p {
+  color: rgb(249, 249, 249);
+  padding: 5px 0;
+  text-decoration: none;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -118,13 +133,47 @@ body{
   transform: translate3d(0,100%,0);
 }
 
-.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+.hovereffect:hover a{
   opacity: 1;
+  color: #d0dbdb;
+
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.hovereffect:hover p{
+  opacity: 1;
+  color: #d0dbdb;
+  text-align: left;
+  font-weight: lighter;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.hovereffect:hover h2 {
+  opacity: 1;
+  color: #d0dbdb;
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
 
+/* -- ----------------- Main Page Upload Section --------------------------------------------------------------*/
+.uploadSection {
+  max-width: 100%;
+}
+.uploadSection h1{
+  padding: 10px;
+}
+@media only screen and (max-width: 797px) {
+  .uploadSection h1 {
+    font-size: 20px;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px 0 rgba(65, 65, 65, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.19);
+}
 /*-----------------------------------------------------Registration Page --------------------------------------------------------*/
 .container_RegForm hr {
     border: 1px solid #f1f1f1;

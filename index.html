@@ -102,19 +102,22 @@
         <div class="hovereffect">
             <img class="image-responsive"src="Images/augmented-reality.jpg" alt="Los Angeles">
                 <div class="overlay">
-                    <h2 >It is a rose!</p>
-                    <p>It is a tulip!</p>
-                    <p>It is a paragraph!</p>
+                  <a href="https://www.devdiscourse.com/article/technology/2275239-the-metaverse-offers-challenges-and-possibilities-for-the-future-of-the-retail-industry">
+                    <h2>The metaverse offers all possibilities for the future of the retail industry</h2>
+                    <p>Virtual billboard advertising is something marketers should keep in mind.Secondly, the metaverse offers unique experiences for customers to engage with brands through events, contests, and game-like features. Click here to Read More...</p>
+                    </a>
                 </div>
-        </div>
+                  
+        </div>       
     </div>
     <div class="carousel-item active">
         <div class="hovereffect">
-            <img class="image-responsive" src="Images/bleachJPG.jpg" alt="Chicago">
+            <img class="image-responsive" src="Images/AOTpng.png" alt="Chicago">
             <div class="overlay">
-                <p>It is a rose!</p>
-                <p>It is a tulip!</p>
-                <p>It is a paragraph!</p>
+              <a href="https://www.devdiscourse.com/article/technology/2275239-the-metaverse-offers-challenges-and-possibilities-for-the-future-of-the-retail-industry">
+                <h2>Anime Fans Still Love Attack On Titan Creator Despite The Series' Ending</h2>
+                <p>Attack on Titan creator Hajime Iseyama was nervous about his first-ever appearance at Anime NYC a few weeks ago. Click here to Read More ...</p>
+              </a>
             </div>
         </div>
     </div>
@@ -122,9 +125,10 @@
         <div class="hovereffect">
             <img class="image-responsive" src="Images/fifa.jpg" alt="New York">
                 <div class="overlay">
-                    <p>It is a rose!</p>
-                    <p>It is a tulip!</p>
-                    <p>It is a paragraph!</p>
+                  <a href="https://www.devdiscourse.com/article/technology/2275239-the-metaverse-offers-challenges-and-possibilities-for-the-future-of-the-retail-industry">
+                    <h2>FIFA releases video to validate Japan's controversial winner against Spain</h2>
+                <p>FIFA on Friday released a video to prove Japan's contentious winner against Spain was legitimate. Kaoru Mitoma's cutback for Ao Tanaka to give Japan a 2-1 victory had meant end of the road for Germany. Click here to Read More...</p>
+                  </a>
                 </div>
         </div>
     </div>
@@ -141,24 +145,163 @@
 </div>
 
 <!-- ------------------- Main Content Page -------------------------------------------------------------------------->
-        <div class="mainPageContent">
-    <!-- Submissions ------------------------------------------------------------------------->      
-            <div class="thought">
-                <form>
-                    <input type="text" class="thoughtTerm" placeholder="Share with the World here !!"> 
-                    <button class="thoughtBtn"> Submit </button>
-                    <label class="fileUpload" for="text_file">Attach a file (.word, .pdf)</label>
-                    <input class="fileUpload"
-                      type="file"
-                      id="text_file"
-                      name="text_file"
-                      accept=".word, .pdf"
-                      multiple />
-                </form>
+    <!-- Submissions ------------------------------------------------------------------------->  
+    <hr class="HRLine">
+  <div class="uploadSection">
+    <div class="container">
+        <h1> Share your thoughts with the World !!</h1>
+        <div class="container">
+          <div class="form-group" x-data="{ fileName: '' }">
+            <div class="input-group shadow">
+              <span class="input-group-text px-3 text-muted"><i class="fas fa-file-archive fa-lg"></i></span>
+              <input type="file" x-ref="file" @change="fileName = $refs.file.files[0].name" name="img[]" class="d-none">
+              <input type="text" class="form-control form-control-lg" placeholder="Upload your file here" x-model="fileName">
+              <button class="browse btn btn-primary px-4" type="button" x-on:click.prevent="$refs.file.click()"><i class="fas fa-file-archive"></i> Browse</button>
             </div>
+          </div>
+        </div>
+    </div>
+  </div>
+    
             <hr class="HRLine">
     <!-- Content Section -- Blogs and Vlogs--------------------------------------------------->
+
+
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>If you have to ask what, exactly, the metaverse is — don’t feel bad.<br>
+              The metaverse is hardly a brand-new concept, but the speed with which it recently began making headlines is impressive. And the meaning of “metaverse” seems to expand daily,
+               as more and more recognizable brands and businesses begin to incorporate it into their long-term plans.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title">What Is The Metaverse (and Why Should You Care)?</h2>
+          </div>
+          <div class="modal-body">
+            <h5>Is the metaverse just a trending topic, or is it going to shape the future of social media marketing? Here's everything you need to know.</h5>
+                  <p>If you have to ask what, exactly, the metaverse is — don’t feel bad.<br>
+                      The metaverse is hardly a brand-new concept, but the speed with which it recently began making headlines is impressive. And the meaning of “metaverse” seems to expand daily,
+                       as more and more recognizable brands and businesses begin to incorporate it into their long-term plans.</p>
+
+                  <h3>What is the metaverse?</h3>
+                  <p>The metaverse is a virtual world in which users, businesses, and digital platforms can exist and interact. 
+                      It includes everything from virtual social and gaming platforms (e.g. Roblox) to NFTs, a.k.a. non-fungible tokens (more on those later).</p>
+
+                  <h3>Why did Facebook rebrand to Meta?</h3>
+                  <p>In October of 2021, Mark Zuckerberg announced that social media titan Facebook would be rebranding to Meta.</p>
+                  
+
+                  
+                  <p>To be clear, Facebook (the social platform) has remained Facebook. 
+                      It’s the parent company (under which Facebook, WhatsApp, and Instagram, among others, are operated) changed its name to Meta.</p>
+
+                  <p>
+                      Oculus (the VR headset business which Meta already owns), NFTs, and cryptocurrency are all a part of the company’s long-term vision. 
+                      It’s far too early to see the fruits of their labor, but with the time and money they’re investing already, it won’t be long before we do.</p>
+
+                  <h3>Is the metaverse the future of social media?</h3>
+
+                  <p>With all of the buzz surrounding recent metaverse developments and investments, you might be wondering if — and how — the concept will shape the future of social media (and social media marketing).</p>
+
+                  <p>But the answer is still a bit up in the air. This version of the metaverse is very young. 
+                      While 2021 may have been a breakout year for it, it’s actually the next few years that will determine its staying power.</p>
+              <h4>Naitik Pareek</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+
+    <div class="container">
             <h2 class="postTitle">Posts of the Day</h2>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="Images/man-wearing-smart-glasses-touching-virtual-screen-futuristic-technology-digital-remix.jpg" class="card-img-top"
+                    alt="Skyscrapers" />
+                  <div class="card-body">
+                    <h5 class="card-title">What Is The Metaverse (and Why Should You Care)?</h5>
+                    <p class="card-text">
+                      Is the metaverse just a trending topic, or is it going to shape the future of social media marketing? Here's everything you need to know.
+                    </p>
+                    <button type="button" class="btn btn-dark align-item-bottom" data-toggle="modal" data-target="#exampleModalLong">
+                      Read Blog
+                    </button>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top"
+                    alt="Los Angeles Skyscrapers" />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                    <button type="button" class="btn btn-outline-secondary align-item-bottom" data-toggle="modal" data-target="#exampleModalLong">
+                      Watch Vlog
+                    </button>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 2 hr ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top"
+                    alt="Palm Springs Road" />
+                  <div class="card-body">
+                    <h5 class="card-title">Making Antimatter !!</h5>
+                    <p class="card-text">
+                      We don't find antimatter around us; in order to study antimatter it has to be made.
+                    </p>
+                    <button type="button" class="btn btn-dark align-item-bottom" data-toggle="modal" data-target="#exampleModalLong">
+                      Read Blog
+                    </button>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 4 days ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+       </div> 
+
+
+
+
+       
+      
             <div class="blog-container">
                 <div class="blog-content-container">
                     <h2>What Is The Metaverse (and Why Should You Care)?</h2>
