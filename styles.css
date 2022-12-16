@@ -69,7 +69,11 @@ body{
   -ms-transform: scale(0,1);
   transform: scale(0,1);
 }
-
+.BrandImage{
+  max-width: 100px;
+  max-height: 40px;
+  border-radius: 5px;
+}
 .hovereffect:hover .overlay {
   opacity: 2;
   filter: alpha(opacity=100);
