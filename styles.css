@@ -2,7 +2,9 @@
 	box-sizing: border-box;
 }
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
+html{
+  scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -638,4 +640,81 @@ body{
 }
 .blog-container h4{
   margin-left: 30px;
+}
+
+/* ------------------------------------------ Vlogs Page ----------------------------------------------------------------------*/
+.vlogContent{
+  max-width: 100%;
+  padding: 10px 30px;
+  background-color: #ecebebc0;
+  border-radius: 5px;
+}
+.vlogComment{
+  background-color: #ecebebc0;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.iframeSection{
+  padding: 20px 10px 30px 10px;
+}
+.vlogContent h4 {
+  color: #3a3a3a;
+}
+.vlogContent p{
+  color: #797878;
+  padding-left: 50px;
+}
+
+.vlogSection{
+  background-color: #f0edf283;
+}
+
+.videoSize{
+  border-radius: 5px;
+  width: 700px;
+  height: 400px;
+}
+.form-group button{
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 797px) {
+  .vlogContent{
+   max-width: 250px;
+    padding: 5px 15px;
+    background-color: #ecebebc0;
+    border-radius: 5px;
+  }
+  .vlogComment{
+    background-color: #ecebebc0;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .vlogComment h5{
+    background-color: #ecebebc0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  .iframeSection{
+    padding: 15px 5px 15px 5px;
+  }
+  .vlogContent h4 {
+    color: #3a3a3a;
+    font-size: 12px;
+  }
+  .vlogContent p{
+    color: #797878;
+    padding-left: 15px;
+    font-size: 10px;
+  }
+  .videoSize{
+    border-radius: 5px;
+    width: 200px;
+    height: 100px;
+  }
+  .container{
+    width:fit-content;
+  }
 }
